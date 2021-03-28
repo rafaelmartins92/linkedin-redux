@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import firebase from "firebase";
 
 import "./Feed.css";
 
 import InputOptions from "../InputOptions/InputOptions";
 import Post from "../Post/Post";
+import { db } from "../../firebase";
 
 import CreateIcon from "@material-ui/icons/Create";
 import ImageIcon from "@material-ui/icons/Image";
@@ -13,10 +15,33 @@ import VerticalSplitIcon from "@material-ui/icons/VerticalSplit";
 
 function Feed() {
   const [posts, setPosts] = useState([]);
+  const [input, setInput] = useState("");
+
+  useEffect(() => {
+    db.collection("posts")
+      .orderBy("timestamp", "desc")
+      .onSnapshot((snapshot) =>
+        setPosts(
+          snapshot.docs.map((doc) => ({
+            id: doc.id,
+            data: doc.data(),
+          }))
+        )
+      );
+  }, []);
 
   function sendPost(e) {
     e.preventDefault();
-    console.log("send post");
+
+    db.collection("posts").add({
+      name: "Elon Musk",
+      description: "I'm the guy",
+      message: input,
+      photoUrl: "",
+      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+    });
+
+    setInput("");
   }
 
   return (
@@ -25,7 +50,12 @@ function Feed() {
         <div className="feed-input">
           <CreateIcon />
           <form>
-            <input type="text" placeholder="Começar publicação" />
+            <input
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              type="text"
+              placeholder="Começar publicação"
+            />
             <button onClick={sendPost} type="submit">
               Enviar
             </button>
@@ -43,10 +73,15 @@ function Feed() {
         </div>
       </div>
 
-      {posts.map((post) => (
-        <Post />
+      {posts.map(({ id, data: { name, description, message, photoUrl } }) => (
+        <Post
+          key={id}
+          name={name}
+          description={description}
+          message={message}
+          photoUrl={photoUrl}
+        />
       ))}
-      <Post name="Steve Jobs" description="Teste" message="Its working" />
     </div>
   );
 }
