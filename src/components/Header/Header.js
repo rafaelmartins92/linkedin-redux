@@ -15,10 +15,7 @@ function Header() {
   return (
     <div className="header">
       <div className="header-left">
-        <img
-          src="https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token=exp=1615699008~hmac=966cf947b59220b63f5f84117af4b329"
-          alt=""
-        />
+        <img src="linkedin.png" alt="" />
 
         <div className="header-search">
           <SearchIcon />
