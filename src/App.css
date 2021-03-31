@@ -7,4 +7,8 @@
 
 .app-body {
   display: flex;
+  max-width: 1200px;
+  margin-top: 35px;
+  margin-left: 20px;
+  margin-right: 20px;
 }

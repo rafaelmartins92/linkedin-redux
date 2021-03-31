@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./Post.css";
+
 import InputOptions from "../InputOptions/InputOptions";
 
 import { Avatar } from "@material-ui/core";
@@ -13,7 +14,7 @@ function Post({ name, description, message, photoUrl }) {
   return (
     <div className="post">
       <div className="post-header">
-        <Avatar />
+        <Avatar src={photoUrl}>{name[0]}</Avatar>
         <div className="post-info">
           <h2>{name}</h2>
           <p>{description}</p>
