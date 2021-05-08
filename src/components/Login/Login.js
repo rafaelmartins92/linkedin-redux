@@ -24,7 +24,7 @@ function Login() {
             email: userAuth.user.email,
             uid: userAuth.user.uid,
             displayName: userAuth.user.displayName,
-            photoUrl: userAuth.user.photoUrl,
+            photoUrl: userAuth.user.photoURL,
           })
         );
       })
@@ -50,7 +50,7 @@ function Login() {
                 email: userAuth.user.email,
                 uid: userAuth.user.uid,
                 displayName: name,
-                photoUrl: profilePic,
+                photoURL: profilePic,
               })
             );
           });
