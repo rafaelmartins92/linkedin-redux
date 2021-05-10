@@ -1,68 +1,94 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+<h1 align="center">
+    <img alt="Logo" src="public/logo.png" />
+    <br>
+</h1>
 
-## Available Scripts
+<p align="center">
+  <a href="https://www.linkedin.com/in/rafael-martins92/">
+  <img alt="Made By" src="https://img.shields.io/static/v1?label=Made%20By&message=Rafael%20Martins&color=orange&style=for-the-badge">
+	</a>
+  
+  <img alt="Languages" src="https://img.shields.io/github/languages/count/rafaelmartins92/linkedin-redux?style=for-the-badge">
+  
+  <img alt="Top Language" src="https://img.shields.io/github/languages/top/rafaelmartins92/linkedin-redux?style=for-the-badge">
+  
+  <img alt="Repo Size" src="https://img.shields.io/github/repo-size/rafaelmartins92/linkedin-redux?style=for-the-badge">
+  
+  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/rafaelmartins92/linkedin-redux?style=for-the-badge">
+</p>
 
-In the project directory, you can run:
+<h4 align="center">
+  <p>LinkedRM - Learning Redux</p>
+  
+  <p>This application was developed to learn more about Redux.</p>
 
-### `yarn start`
+  <p>Developed with React JS, CSS, Redux and Firebase.</p>
+</h4>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<p align="center">
+  <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#eyes-check-it-out">Check it Out</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#information_source-how-to-use">How To Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-license">License</a>
+</p>
 
-### `yarn test`
+<p align="center">
+  <img alt="Home" src="public/github-scene---linkedin-home@2x.png">
+  <img alt="List" src="public/github-scene---linkedin-posts@2x.png">
+</p>
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## :rocket: Technologies
 
-### `yarn build`
+This project was developed with the following technologies:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-  [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+-  [React JS](https://pt-br.reactjs.org/)
+-  [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+-  [Redux](https://redux.js.org/)
+-  [Firebase](https://firebase.google.com/?hl=pt-br)
+-  [VS Code][vc] with [EditorConfig][vceditconfig] and [ESLint][vceslint]
+## :eyes: Check it Out
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+You can try it here:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-  [LinkedRM][demo]
 
-### `yarn eject`
+## :information_source: How to Use
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js][nodejs] + [Yarn][yarn] installed on your computer.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+From your command line:
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+# Clone this repository
+$ git clone https://github.com/rafaelmartins92/linkedin-redux.git linkedin-redux
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Go into the repository
+$ cd linkedin-redux
 
-## Learn More
+# Install dependencies
+$ npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Run the server
+$ npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# The web application will open on port:3000 
+# To access it go to http://localhost:3000 
+```
 
-### Code Splitting
+## :memo: License
+This project is under the MIT license. See the [LICENSE](https://github.com/rafaelmartins92/linkedin-redux/blob/master/LICENSE) for more information.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+---
 
-### Analyzing the Bundle Size
+<h4 align="center">
+    Made with ♥ by Rafael Martins 👋 <a href="https://www.linkedin.com/in/rafael-martins92/" target="_blank">Get in touch!</a>
+</h4>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[nodejs]: https://nodejs.org/
+[yarn]: https://yarnpkg.com/
+[vc]: https://code.visualstudio.com/
+[vceditconfig]: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+[vceslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+[demo]: https://linkedin-redux.web.app/
